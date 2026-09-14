@@ -1,4 +1,4 @@
-# dbbackup — Database Backup & Restore CLI
+# Database Backup & Restore CLI
 
 A command-line utility for backing up and restoring databases, built in Python. Supports multiple database management systems through a pluggable connector architecture, with compression, logging, OS-level scheduling, and safe restore operations.
 
@@ -280,18 +280,6 @@ Current tests verify, for both SQLite and MySQL:
 - Partial or failed backup files are deleted rather than left in place looking valid.
 
 ---
-
-## Roadmap / Deferred Features
-
-The connector and storage abstractions were built so these can be added without restructuring existing code:
-
-- [ ] PostgreSQL connector (via `pg_dump` / `pg_restore`)
-- [ ] MongoDB connector (via `mongodump` / `mongorestore`)
-- [ ] Cloud storage backends: AWS S3, Google Cloud Storage, Azure Blob Storage
-- [ ] Slack notifications on backup completion/failure
-- [ ] Selective restore (specific tables/collections rather than the full database)
-- [ ] Incremental / differential backup strategies (currently full backups only)
-- [ ] Cross-platform scheduling docs (cron setup tested on Linux/macOS)
 
 ---
 
