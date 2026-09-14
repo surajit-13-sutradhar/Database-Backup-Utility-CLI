@@ -2,8 +2,6 @@
 
 A command-line utility for backing up and restoring databases, built in Python. Supports multiple database management systems through a pluggable connector architecture, with compression, logging, OS-level scheduling, and safe restore operations.
 
-> Status: Core functionality complete for **SQLite** and **MySQL**. PostgreSQL, MongoDB, cloud storage (S3/GCS/Azure), Slack notifications, and selective restore are designed for but not yet implemented — see [Roadmap](#roadmap--deferred-features).
-
 ---
 
 ## Features
