@@ -1,0 +1,7 @@
+typer
+rich
+pydantic
+pyyaml
+python-dotenv
+mysql-connector-python
+pytest
